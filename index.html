@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"],
+                        breeserif: ["Bree serif"]
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <div class="flex flex-col justify-center items-center bg-gradient-to-b from-[#189ffd] to-[#29f39c] h-screen">
+        <div class="bg-white rounded-xl w-[80%] p-8">
+            <div class="text-center">
+                <h1 class="text-3xl font-roboto text-gray-800">A Moment of Peace</h1>
+                <p class="text-base text-gray-600 font-roboto mt-2">
+                    Turn off your phone, put on your headphones and take a moment for
+                    yourself.
+                </p>
+                <hr class="border-gray-300 mt-6 mb-6" />
+                <h1 class="text-2xl font-breeserif text-gray-800">
+                    How long would you like your moment to be?
+                </h1>
+                <ul class="flex justify-center items-center mt-4 list-none">
+                    <li>
+                        <button id="twentySecondsBtn" class="bg-[#05a8f2] text-white rounded-md w-16 h-16 font-roboto text-sm border-0 hover:bg-blue-600 mr-3">
+                            20 Seconds
+                        </button>
+                    </li>
+                    <li>
+                        <button id="thirtySecondsBtn" class="bg-[#05a8f2] text-white rounded-md w-16 h-16 font-roboto text-sm border-0 hover:bg-blue-600 mr-3">
+                            30 Seconds
+                        </button>
+                    </li>
+                    <li>
+                        <button id="fortySecondsBtn" class="bg-[#05a8f2] text-white rounded-md w-16 h-16 font-roboto text-sm border-0 hover:bg-blue-600 mr-3">
+                            40 Seconds
+                        </button>
+                    </li>
+                    <li>
+                        <button id="oneMinuteBtn" class="bg-[#05a8f2] text-white rounded-md w-16 h-16 font-roboto text-sm border-0 hover:bg-blue-600 mr-3">
+                            1 Minute
+                        </button>
+                    </li>
+                </ul>
+                <p id="timerText" class="text-center text-md mt-4"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
